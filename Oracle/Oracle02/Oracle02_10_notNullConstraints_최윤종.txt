@@ -1,0 +1,29 @@
+SQL> drop table depttable;
+
+Table dropped.
+
+SQL> create table depttable(
+  2  deptno number(3),
+  3  dname VARCHAR2(10),
+  4  loc VARCHAR2(20));
+
+Table created.
+
+SQL> insert into depttable values('총무부','서울');
+insert into depttable values('총무부','서울')
+            *
+ERROR at line 1:
+ORA-00947: not enough values
+
+
+SQL> insert into depttable(dname, loc) values('총무부','서울');
+
+1 row created.
+
+SQL> select * from depttable;
+
+    DEPTNO DNAME                LOC
+---------- -------------------- ----------------------------------------
+           총무부               서울
+
+SQL>

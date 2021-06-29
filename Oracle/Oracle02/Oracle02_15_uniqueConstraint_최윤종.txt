@@ -1,0 +1,25 @@
+SQL> drop table depttable;
+
+Table dropped.
+
+SQL> create table depttable(
+  2  deptno number(3),
+  3  dname varchar2(10),
+  4  loc varchar2(20));
+
+Table created.
+
+SQL> insert into depttable values('10','총무부','서울');
+
+1 row created.
+
+SQL> insert into depttable values('10','총무부1','서울1');
+
+1 row created.
+
+SQL> select * from depttable;
+
+    DEPTNO DNAME                LOC
+---------- -------------------- ----------------------------------------
+        10 총무부               서울
+        10 총무부1              서울1

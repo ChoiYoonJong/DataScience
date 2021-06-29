@@ -1,0 +1,24 @@
+
+SQL> select Trunc(777.777,2) from dual;
+
+TRUNC(777.777,2)
+----------------
+          777.77
+
+SQL> select Trunc(777.777,0) from dual;
+
+TRUNC(777.777,0)
+----------------
+             777
+
+SQL> select Trunc(777.777,-2) from dual;
+
+TRUNC(777.777,-2)
+-----------------
+              700
+
+SQL> select Trunc(777.777,-3) from dual;
+
+TRUNC(777.777,-3)
+-----------------
+                0

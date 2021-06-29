@@ -1,0 +1,17 @@
+SQL> drop table MemberT01;
+
+Table dropped.
+
+SQL> select * from tab;
+
+no rows selected
+
+SQL> conn happyday/happy;
+Connected.
+SQL> show user;
+USER is "HAPPYDAY"
+SQL> select * from tab;
+
+no rows selected
+
+SQL>

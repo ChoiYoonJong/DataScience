@@ -1,0 +1,16 @@
+User created.
+
+SQL> grant dba to happyday;
+
+Grant succeeded.
+
+SQL> select username from all_users;
+
+USERNAME
+------------------------------------------------------------
+XS$NULL
+HAPPYDAY
+ANGEL
+APEX_040000
+APEX_PUBLIC_USER
+FLOWS_FILES

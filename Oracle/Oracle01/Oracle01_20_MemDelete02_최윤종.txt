@@ -1,0 +1,46 @@
+SQL> insert into memberT01
+  2  values ('오렌지','Orange1','1234','Orange@test.com','044','홍익대학교');
+
+1 row created.
+
+SQL> insert into memberT01
+  2  values ('오렌지','Orange2','1234','Orange@test.com','044','홍익대학교');
+
+1 row created.
+
+SQL> insert into memberT01
+  2  values ('오렌지','Orange3','1234','Orange@test.com','044','홍익대학교');
+
+1 row created.
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  insert into memberT01
+  2* values ('오렌지','Orange3','1234','Orange@test.com','044','홍익대학교')
+SQL> delete from memberT01
+  2  where mem_id = 'orange1';
+
+0 rows deleted.
+
+SQL> delete from memberT01
+  2  where mem_id = 'Orange1'
+  3  ;
+
+1 row deleted.
+
+SQL> /
+
+0 rows deleted.
+
+SQL> select * from memberT01;
+
+MEM_NAME                                 MEM_ID                                   MEM_PWD                                  MEM_EMAIL
+---------------------------------------- ---------------------------------------- ---------------------------------------- ------------------------------------------------------------
+MEM_PHONE                                MEM_ADDR
+---------------------------------------- ----------------------------------------
+오렌지                                   Orange2                                  1234                                     Orange@test.com
+044                                      홍익대학교
+
+오렌지                                   Orange3                                  1234                                     Orange@test.com
+044                                      홍익대학교

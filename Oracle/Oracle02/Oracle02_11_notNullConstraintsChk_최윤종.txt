@@ -1,0 +1,20 @@
+SQL> create table depttable(
+  2  deptno number(3).
+  3  dname VARCHAR2(10),
+  4  l
+  5
+SQL> create table depttable (
+  2  deptno number(3) not null,
+  3  dname VARCHAR2(10),
+  4  loc VARCHAR2(20));
+
+Table created.
+
+SQL> insert into depttable(dname, loc) values('총무부','서울');
+insert into depttable(dname, loc) values('총무부','서울')
+*
+ERROR at line 1:
+ORA-01400: cannot insert NULL into ("HAPPYDAY"."DEPTTABLE"."DEPTNO")
+
+
+SQL>

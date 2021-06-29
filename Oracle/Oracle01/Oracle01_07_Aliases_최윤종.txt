@@ -1,0 +1,7 @@
+SQL> select employee_id AS "사번",first_name AS "이름",last_name AS "성" from employees;
+
+      사번 이름                                     성
+---------- ---------------------------------------- --------------------------------------------------
+       100 Steven                                   King
+       101 Neena                                    Kochhar
+       102 Lex                                      De Haan

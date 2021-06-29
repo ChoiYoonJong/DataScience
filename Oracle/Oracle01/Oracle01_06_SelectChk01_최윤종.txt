@@ -1,0 +1,7 @@
+SQL> select employee_id,last_name,first_name from employees;
+
+EMPLOYEE_ID LAST_NAME                                          FIRST_NAME
+----------- -------------------------------------------------- ----------------------------------------
+        100 King                                               Steven
+        101 Kochhar                                            Neena
+        102 De Haan                                            Lex

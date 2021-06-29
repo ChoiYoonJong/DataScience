@@ -1,0 +1,22 @@
+SQL> drop table depttable;
+
+Table dropped.
+
+SQL> create table depttable(
+  2  deptni number(3) CONSTRAINT dept_deptno_nn         not null,
+  3  dname varchar2(10),
+  4  lov varchar2(10));
+
+Table created.
+
+SQL> select owner,constraint_name,table_name from user_constraints;
+
+OWNER
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CONSTRAINT_NAME                                              TABLE_NAME
+------------------------------------------------------------ ------------------------------------------------------------
+HAPPYDAY
+DEPT_DEPTNO_NN                                               DEPTTABLE
+
+
+SQL>

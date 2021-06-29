@@ -1,0 +1,44 @@
+SQL> select * from dept;
+
+    DEPTNO DNAME                LOC
+---------- -------------------- ----------------------------------------
+        10 총무부               서울
+        20 영업부               대전
+
+SQL> select * from dept;
+
+    DEPTNO DNAME                LOC
+---------- -------------------- ----------------------------------------
+        10 총무부               서울
+        20 영업부               대전
+
+SQL> delete from dept
+  2  where deptno = 10;
+delete from dept
+*
+ERROR at line 1:
+ORA-02292: integrity constraint (SYSTEM.SAWON_DEPTNO_FK) violated - child record found
+
+
+SQL> delete from sawon
+  2  where deptno = 10;
+delete from sawon
+*
+ERROR at line 1:
+ORA-02292: integrity constraint (SYSTEM.SAWON_SAMGR_FK) violated - child record found
+
+
+SQL> select * from gogek;
+
+no rows selected
+
+SQL> delete from sawon
+  2  where deptno = 20;
+
+1 row deleted.
+
+SQL> select * from sawon;
+
+     SABUN SANAME                   DEPTNO SAJOB                     SAPAY SAHIRE   SASEX             SAMGR
+---------- -------------------- ---------- -------------------- ---------- -------- ------------ ----------
+         1 홍길동                       10 회장                       5000 80/01/01 남자
