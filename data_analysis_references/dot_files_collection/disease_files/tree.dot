@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="cell_size <= -0.212\nsamples = 478\nvalue = [313, 165]\nclass = 악성", fillcolor="#f3c3a1"] ;
+1 [label="bare_nuclei <= -0.012\nsamples = 299\nvalue = [289, 10]\nclass = 악성", fillcolor="#e68540"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="samples = 279\nvalue = [279, 0]\nclass = 악성", fillcolor="#e58139"] ;
+1 -> 2 ;
+3 [label="clump <= -0.334\nsamples = 20\nvalue = [10, 10]\nclass = 악성", fillcolor="#ffffff"] ;
+1 -> 3 ;
+4 [label="samples = 10\nvalue = [10, 0]\nclass = 악성", fillcolor="#e58139"] ;
+3 -> 4 ;
+5 [label="samples = 10\nvalue = [0, 10]\nclass = 양성", fillcolor="#399de5"] ;
+3 -> 5 ;
+6 [label="cell_size <= 0.44\nsamples = 179\nvalue = [24, 155]\nclass = 양성", fillcolor="#58ace9"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="bare_nuclei <= -0.012\nsamples = 65\nvalue = [23, 42]\nclass = 양성", fillcolor="#a5d3f3"] ;
+6 -> 7 ;
+8 [label="samples = 29\nvalue = [20, 9]\nclass = 악성", fillcolor="#f1ba92"] ;
+7 -> 8 ;
+9 [label="samples = 36\nvalue = [3, 33]\nclass = 양성", fillcolor="#4ba6e7"] ;
+7 -> 9 ;
+10 [label="adhesion <= -0.465\nsamples = 114\nvalue = [1, 113]\nclass = 양성", fillcolor="#3b9ee5"] ;
+6 -> 10 ;
+11 [label="samples = 8\nvalue = [1, 7]\nclass = 양성", fillcolor="#55abe9"] ;
+10 -> 11 ;
+12 [label="samples = 106\nvalue = [0, 106]\nclass = 양성", fillcolor="#399de5"] ;
+10 -> 12 ;
+}
